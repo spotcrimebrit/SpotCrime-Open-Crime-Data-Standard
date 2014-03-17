@@ -11,16 +11,103 @@ We typically ask for Part I and II crime information since most agencies already
 
 <table>
   <tr>
-    <td width=15%><b>Guideline</b></td>
-    <td width=15%><b>Example</b></td>
-    <td width=15%><b>Example</b></td>
-    <td width=15%><b>Example</b></td>
-    <td width=40%><b>Example</b></td>
+    <td width=15%><b>Data Type</b></td>
+    <td width=15%><b>Required</b></td>
+    <td width=15%><b>Permitted Values</b></td>
+    <td width=15%><b>Examples</b></td>
+    <td width=40%><b>Details</b></td>
   </tr>
   <tr>
-    <td>Open data sets should not include data that is prohibited by law or city policy to be open</td>
-    <td>Citizen financial information, public safety information that is not public, data that could compromise citizen privacy, or the security of city services</td>
-    <td></td>
-    <td></td>
+    <td>Area</td>
+    <td>Yes</td>
+    <td>Text</td>
+    <td>Baltimore County, MD</td>
+    <td>Defines city/county/jurisdiction and state</td>
   </tr>
+ <tr>
+    <td>Date</td>
+    <td>Yes</td>
+    <td>ISO 8601; YYYY-MM-DD</td>
+    <td>2014-03-10</td>
+    <td>Date occurred. Allows easy identifier and separation of data. Date displayed in mm/dd/yyyy on SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>Time</td>
+    <td>Yes</td>
+    <td>ISO 8601; UTC and 24 hour</td>
+    <td>23:11</td>
+    <td>Time occurred. Allows easy identifier and separation of data. Displayed in 12 hour format on SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>Incident Type</td>
+    <td>Yes</td>
+    <td>Text</td>
+    <td>Aggravated Assault</td>
+    <td>Allows icons to be assigned and decipher between crime types. SpotCrime dictionary categorizes each incident into 1 of 9 icons.</td>
+  </tr>
+ <tr>
+    <td>Location</td>
+    <td>Yes</td>
+    <td>Street number and street name</td>
+    <td>322 York Road</td>
+    <td>Full and block addresses are accepted. Needed for geo-coding accuracy. All full addresses are masked to the block level on SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>City</td>
+    <td>Yes</td>
+    <td>Text</td>
+    <td>Towson, MD</td>
+    <td>Needed for geo-coding accuracy. 
+</td>
+  </tr>
+ <tr>
+    <td>Narrative</td>
+    <td>Yes</td>
+    <td>Text</td>
+    <td>A victim was stabbed in the abdomen by an unknown subject after a verbal altercation.</td>
+    <td>Provides more description and information on incident type (commercial burglary or residential burglary). Displayed in the details section on SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>Longitutde, Latitude</td>
+    <td>Yes</td>
+    <td>Georaphic coordinate system</td>
+    <td>39.399262, -76.602990</td>
+    <td>Geo-coding accuracy. Not displayed by SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>Case Number</td>
+    <td>Yes</td>
+    <td>Text and number accepted</td>
+    <td>2014-031023111</td>
+    <td>Helps identify specific incidents. Displayed in the details section on SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>Incident Number (if different from case number)</td>
+    <td>Optional, highly recommended</td>
+    <td>Text and number accepted</td>
+    <td> </td>
+    <td>Helps identify specific incidents. Displayed in the details section on SpotCrime.</td>
+  </tr>
+ <tr>
+    <td>Beat/Sector</td>
+    <td>Optional</td>
+    <td>Text and number accepted</td>
+    <td>6A</td>
+    <td>Displayed in the details section on SpotCrime. </td>
+  </tr>
+ <tr>
+    <td>District/Precinct</td>
+    <td>Optional</td>
+    <td>Text and number accepted</td>
+    <td>Towson</td>
+    <td>Displayed in the details section on SpotCrime. </td>
+  </tr>
+ <tr>
+    <td>ZIP Code</td>
+    <td>Optional</td>
+    <td>US and International postal codes accepted</td>
+    <td>21204</td>
+    <td>Helps with geo-coding accuracy. Displayed in the details section on SpotCrime.</td>
+  </tr>
+  
   
