@@ -208,3 +208,34 @@ Expectations should be set high. Frequency of weekly or longer defeats the purpo
   </td
  </tr>
 </table>
+
+## **Examples of feeds already in existence:**
+
+<table>
+ <tr>
+  <td width=10%><b>City</b></td>
+  <td width=55%><b>Description of Dataset</b></td>
+  <td width=35%><b>Link</b></td>
+ </tr>
+ <tr>
+  <td>Philly</td>
+  <td>This layer holds Part I crime for the City of Philadelphia beginning January 1, 2006. Part I crime includes homicides, rapes, robberies, aggravated assaults, and thefts. The data displayed is generalized by the crime type and the block location. The data is updated daily. Metadata is included in the ZIP file.</td>
+  <td>http://www.opendataphilly.org/opendata/resource/215/philadelphia-police-part-one-crime-incidents/
+http://www.phillypolice.com/crime-maps-stats</td>
+ </tr>
+ <tr>
+  <td>Denver</td>
+  <td>This dataset includes criminal offenses in the City and County of Denver for the previous five calendar years plus the current year to date. The data is based on the National Incident Based Reporting System (NIBRS) which includes all victims of person crimes and all crimes within an incident. The data is dynamic, which allows for additions, deletions and/or modifications at any time, resulting in more accurate information in the database. Due to continuous data entry, the number of records in subsequent extractions are subject to change. Crime data is updated Monday through Friday.</td>
+  <td>http://data.denvergov.org/dataset/city-and-county-of-denver-crime</td>
+ </tr>
+ <tr>
+ <td>San Francisco</td>
+  <td>Incidents reported via the SFPD CABLE System, from 1/1/2003 to present. In KML format (past 90 days) In Shapefile format (by year) In CSV format (all: 800,000 plus records).
+</td>
+  <td>https://data.sfgov.org/Public-Safety/SFPD-Reported-Incidents-2003-to-Present/dyj4-n68b</td>
+ </tr>
+ <tr>
+ <td>Chicago</td>
+ <td>This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system. In order to protect the privacy of crime victims, addresses are shown at the block level only and specific locations are not identified. Should you have questions about this dataset, you may contact the Research & Development Division of the Chicago Police Department at 312.745.6071 or RandD@chicagopolice.org.</td>
+ <td>https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2</td>
+</table>
