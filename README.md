@@ -1,7 +1,7 @@
 SpotCrime-Open-Crime-Data-Standard
 ==================================
 
-The SpotCrime standard and guidelines for open crime data
+**The SpotCrime standard and guidelines for open crime data**
 
 There are already methods for agencies to share information among each other like N-Dex, NEIM, GJXDM. But what about sharing information openly with the public?
 
@@ -19,4 +19,4 @@ Some additional benefits of standardizing and releasing data openly includes sav
 
 We think this is a work in progress, but feel that the process needed to be initiated.
 
-Check out the standard below. Let us know what you think.
+Let us know what you think.
