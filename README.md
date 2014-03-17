@@ -1,4 +1,4 @@
-SpotCrime-Open-Crime-Data-Standard
+SpotCrime Open Crime Data Standard
 ==================================
 
 **The SpotCrime standard and guidelines for open crime data**
