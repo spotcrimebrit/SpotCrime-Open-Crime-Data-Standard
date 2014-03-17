@@ -1,13 +1,13 @@
 Open Crime Data Specification
 ===========================================
 
-**What Data Should a Police Agency Release?**
+## **What Data Should a Police Agency Release?**
 
 An agency should release anything that would appear on a Daily Incident Log or Call Log (public information only). Most departments pull something from their RMS. SpotCrime offers Catapult to any agency who doesn’t have the ability to create a public file from their RMS.
 
 We typically ask for Part I and II crime information since most agencies already compile this information for their UCR or NIBRS reporting. Our motto is the more information (as long as it’s public), the better. Our system can decipher and define an array of crime types, as well as sort through what information is important and what information is useless. Information typically not released is victim information, juvenile information, or information pertaining to an arrestee’s personal information.
 
-**The Date Set Should Include:**
+## **The Date Set Should Include**
 
 <table>
   <tr>
@@ -109,5 +109,102 @@ We typically ask for Part I and II crime information since most agencies already
     <td>21204</td>
     <td>Helps with geo-coding accuracy. Displayed in the details section on SpotCrime.</td>
   </tr>
-  
-  
+</table>
+
+## **File Format:**
+  A lot of police agencies already generate a public file so as long as it holds the data required above and is in a machine readable format (meaning it can be easily processed by a computer). We also recommend that the data should be downloadable in bulk and publicly displayed on the agency’s or city’s own website. For example, Catapult creates a CSV file. 
+<table>
+  <tr>
+    <td width=47.5%><b>Machine readable formats that fall under the Open Data definition and are accepted under the SpotCrime Standard:</b></td>
+    <td width=5%><b></b></td>
+    <td width=47.5%><b>Formats that do not fall under the Open Data definition:</b></td>
+  </tr>
+<tr>
+  <td>XML</td>
+  <td></td>
+  <td>PDF</td>
+</tr>
+<tr>
+  <td>RSS feed</td>
+  <td></td>
+  <td>HTML</td>
+</tr>
+<tr>
+  <td>CSV</td>
+  <td></td>
+  <td>.DOC(X)</td>
+</tr>
+<tr>
+  <td>RDF</td>
+  <td></td>
+  <td>Anything scanned</td>
+</tr>
+<tr>
+  <td>JSON</td>
+  <td></td>
+  <td>Anything faxed</td>
+</tr>
+<tr>
+  <td>TXT</td>
+  <td></td>
+  <td>Anything typed in an email</td>
+</tr>
+<tr>
+  <td>XLS(X)</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>KML</td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+
+## **Frequency:**
+Daily.
+Expectations should be set high. Frequency of weekly or longer defeats the purposr of open data.
+
+## **Open Crime Data XML example:**
+<table>
+ <tr>
+  <td width=100%></td>
+ </tr>
+ <tr>
+  <td>
+<OpenCrimeData>
+  Version="0.1"  # OpenCrimeData standard version.
+  Language ="en" # Language data is published in.
+  ReportingAgency="NYPD" # Reporting agency.
+  ReportingAgencyURL="http://www.nyc.gov/html/nypd" # Reporting agency URL.
+  ReportingTimeOffset="-5" # Indicates local time zone offset of the reporting agency.
+  PubDate="Date in ISO 8601 format">
+<CrimeData>
+  <Crime>
+    <CaseNumber></CaseNumber>
+    <IncidentNumber></IncidentNumber>
+    <Date>Crime date in ISO 8601 format</IncidentDate>
+    <Time>UTC Time in ISO 8601 format</IncidentTime>
+    <Type>Crime Type (not necessarily Spotcrime type).</Type>
+    <Description>Crime description</Description>
+    <Location>
+      <Address>street address</Address>
+      <Locality>city</Locality>
+      <Region1>state</Region1>
+      <Region2>{might be used in some countries}</Region2>
+      <PostalCode>Zip</PostalCode>
+      <Country>Country, ISO 3166-1 alpha-2</Country>
+    </Location>
+    <GeoLocation>
+      <Latitude></Latitude>
+      <Longitude></Longitude>
+    </GeoLocation>
+  </Crime>
+  <Crime>
+    ...
+  </Crime>
+</CrimeData>
+</OpenCrimeData>
+  </td
+ </tr>
+</table>
