@@ -231,7 +231,7 @@ Expectations should be set high. Frequency of weekly or longer defeats the purpo
  <td>San Francisco</td>
   <td>Incidents reported via the SFPD CABLE System, from 1/1/2003 to present. In KML format (past 90 days) In Shapefile format (by year) In CSV format (all: 800,000 plus records).
 </td>
-  <td>https://data.sfgov.org/Public-Safety/SFPD-Reported-Incidents-2003-to-Present/dyj4-n68b</td>
+  <td>https://data.sfgov.org/Public-Safety/Police-Department-Incidents/tmnf-yvry</td>
  </tr>
  <tr>
  <td>Chicago</td>
