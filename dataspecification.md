@@ -220,8 +220,7 @@ Expectations should be set high. Frequency of weekly or longer defeats the purpo
  <tr>
   <td>Philly</td>
   <td>This layer holds Part I crime for the City of Philadelphia beginning January 1, 2006. Part I crime includes homicides, rapes, robberies, aggravated assaults, and thefts. The data displayed is generalized by the crime type and the block location. The data is updated daily. Metadata is included in the ZIP file.</td>
-  <td>http://www.opendataphilly.org/opendata/resource/215/philadelphia-police-part-one-crime-incidents/
-http://www.phillypolice.com/crime-maps-stats</td>
+  <td>https://www.opendataphilly.org/dataset/crime-incidents</td>
  </tr>
  <tr>
   <td>Denver</td>
